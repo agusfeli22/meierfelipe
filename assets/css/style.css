@@ -425,6 +425,26 @@ section {
   background-color: #149ddd;
 }
 
+.skills-content h4 {
+  color: #149ddd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.skills-tags {
+  margin-bottom: 10px;
+}
+
+.skills-tags .badge {
+  background: #149ddd;
+  color: #fff;
+  margin: 0 8px 8px 0;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
