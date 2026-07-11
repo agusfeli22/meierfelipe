@@ -51,7 +51,16 @@
   if (noBtn) {
     noBtn.addEventListener('click', function () {
       try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
-      closeModal();
+      audio.play().catch(function () {});
+
+      var titleEl = modal ? modal.querySelector('#music-modal-title') : null;
+      var textEl = modal ? modal.querySelector('p') : null;
+      var actionsEl = modal ? modal.querySelector('.music-modal-actions') : null;
+      if (titleEl) titleEl.textContent = 'Pusiste que no, evidentemente te confundiste';
+      if (textEl) textEl.textContent = 'Así que voy a poner el temaso igual.';
+      if (actionsEl) actionsEl.style.display = 'none';
+
+      window.setTimeout(closeModal, 2200);
     });
   }
 
